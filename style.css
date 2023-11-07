@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Nunito&family=Nunito+Sans:ital,opsz,wght@0,6..12,500;1,6..12,300&family=Playfair+Display&family=Poppins:ital,wght@1,300;1,400&family=Sometype+Mono:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#E3F2FD;
+}
+.accordion{
+    max-width: 50%;
+    width: 100%;
+    background-color: #ffff;
+    margin: 0 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 14px rgba(0,0,0,0.2);
+}
+.content{
+    background-color: #FFF7F0;
+    box-shadow: 10px 12px 24px 15px rgba(0,0,0,0.06);
+    border-radius: 4px;
+    margin: 10px 0;
+}
+.accordion .content.active header{
+    background-color: #3e57d0;
+    color: #fff;
+}
+.content.active header i{
+    color: #fff;
+    transform: rotate(180deg);
+    transition: transform 0.2s 0.1s;
+}
+.accordion .content.active .description{
+    display: block;
+}
+.content header{
+    min-height: 50px;
+    padding: 0 15px;
+    background-color:#f3decc;
+    display: flex;
+    align-items: center;
+    border-radius:10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;    
+    justify-content: space-between;
+    cursor: pointer;
+}
+.description{
+    padding:15px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+    background-color: #fff;
+    border-top: 0;
+    line-height: 2;
+    text-align: justify;
+    border-radius:0px 0px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+}
+.content .title{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+.content header i{
+    font-size: 18px;
+    color: #333;
+}
